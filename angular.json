@@ -5,11 +5,30 @@
   "projects": {
     "angular0321": {
       "projectType": "application",
-      "schematics": {
-        "@schematics/angular:application": {
-          "strict": true
-        }
-      },
+  "schematics":{
+    "@schematics/angular:component": {
+        "styleext": "scss",
+        "spec": false
+    },
+    "@schematics/angular:class": {
+       "spec": false
+    },
+    "@schematics/angular:directive": {
+      "spec": false
+    },
+    "@schematics/angular:guard": {
+      "spec": false
+    },
+    "@schematics/angular:module": {
+      "spec": false
+    },
+    "@schematics/angular:pipe": {
+      "spec": false
+    },
+    "@schematics/angular:service": {
+      "spec": false
+    }
+  },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -30,7 +49,7 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": ["node_modules/echarts/dist/echarts.min.js"]
           },
           "configurations": {
             "production": {
